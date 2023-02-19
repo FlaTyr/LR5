@@ -18,8 +18,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_editor_absoluteY="70dp" />
-
-
     <TextView
         android:id="@+id/text2"
         android:layout_width="wrap_content"
@@ -32,72 +30,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.219" />
-
-    <EditText
-        android:id="@+id/etext3"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:hint="Повторите пароль"
-        android:inputType="text"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@id/button"
-        app:layout_constraintHorizontal_bias="0.522"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etext2" />
-
-    <EditText
-
-        android:id="@+id/etext"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:hint="Введите email"
-        android:inputType="text"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/etext2"
-        app:layout_constraintHorizontal_bias="0.519"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text4" />
-
-    <TextView
-        android:id="@+id/text4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="По номеру    "
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/text3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.357" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="370dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="Зарегистрироваться"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.532"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etext3" />
-
-    <EditText
-        android:id="@+id/etext2"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:hint="Введите пароль"
-        android:inputType="text"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@id/etext3"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etext" />
-
     <TextView
         android:id="@+id/text3"
         android:layout_width="wrap_content"
@@ -110,5 +42,65 @@
         app:layout_constraintRight_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.357" />
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="По номеру    "
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/text3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357" />
+    <EditText
+        android:id="@+id/etext"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="Введите email"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/etext2"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4" />
+    <EditText
+        android:id="@+id/etext2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="Введите пароль"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/etext3"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etext" />
+    <EditText
+        android:id="@+id/etext3"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="Повторите пароль"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etext2" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Зарегистрироваться"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etext3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
