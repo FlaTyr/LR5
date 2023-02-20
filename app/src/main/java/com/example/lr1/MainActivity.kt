@@ -22,9 +22,18 @@ class MainActivity : AppCompatActivity() {
         val on_phone = findViewById<TextView>(R.id.text4)
 
         reg.setOnClickListener{
-            if (!((('@' in login.text.toString() && on_mail.currentTextColor == resources.getColor(R.color.purple_200)) || ('+' in login.text.toString()&& on_mail.currentTextColor == resources.getColor(R.color.black)) ) && pass.text.toString() == pass_re.text.toString() && pass.text.toString().length >= 8)) {
-                Toast.makeText(this, "Wasted", Toast.LENGTH_LONG).show()
-            }
+            var error = ""
+            if ('@' !in login.text.toString() && on_mail.currentTextColor == resources.getColor(R.color.purple_200))
+                error += "нет знака @\n"
+            if ('+' !in login.text.toString()&& on_mail.currentTextColor == resources.getColor(R.color.black))
+                error += "нет знака +\n"
+            if (!pass.text.toString().equals(pass_re.text.toString()))
+                error += "пароли не совпадают\n"
+            if (pass.text.toString().length < 8)
+                error += "пароль <8 символов\n"
+            if (!error.isEmpty())
+                Toast.makeText(this, error, Toast.LENGTH_LONG).show()
+
         }
         on_mail.setOnClickListener {
             on_mail.setTextColor(resources.getColor(R.color.purple_200))
