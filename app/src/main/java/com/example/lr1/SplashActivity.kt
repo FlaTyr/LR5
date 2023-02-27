@@ -22,7 +22,7 @@ class SplashActivity : AppCompatActivity() {
                 val intent = Intent(this, RegistrationActivity::class.java)
                 startActivity(intent)
             }
-            if(!shared_ref.getBoolean("autoLogIn", false)){
+            else if(!shared_ref.getBoolean("autoLogIn", false)){
                 pb.progress = 100
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
