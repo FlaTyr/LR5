@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/teal_200"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Huawei Mate 50 Pro"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/launchPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Launch Price:"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/launchPriceVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$1299"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/launchDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Launch Date:"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/launchDateVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sep, 2022"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera Score"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/camVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="149"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
